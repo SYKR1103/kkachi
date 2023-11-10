@@ -17,11 +17,11 @@ import { ConfigService } from '@nestjs/config/dist';
 
 
                 type :'postgres',
-                host : ConfigService.get("POSTGRED_HOST"),
-                port : ConfigService.get("POSTGRED_PORT"),
-                username : ConfigService.get("POSTGRED_USER"),
-                password : ConfigService.get("POSTGRED_PASSWORD"),
-                database : ConfigService.get("POSTGRED_DB"),
+                host : ConfigService.get("POSTGRES_HOST"),
+                port : ConfigService.get("POSTGRES_PORT"),
+                username : ConfigService.get("POSTGRES_USER"),
+                password : ConfigService.get("POSTGRES_PASSWORD"),
+                database : ConfigService.get("POSTGRES_DB"),
           
             entities : [
                 __dirname + "/../**/*.entity{.ts,.js}"
